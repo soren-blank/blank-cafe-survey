@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="title-div">
+        <h1 id="title">Blank Cafe Survey</h1>
+    </div>
+    <div class="title-div">
+    <p class="border" id="description">Take our quick survey and get a free cup of coffee.</p>
+    </div>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">What's your name?</label>
+            <input 
+                id="name" 
+                type="text"
+                class="form-control"
+                required
+                />
+        </fieldset>
+        <fieldset>
+            <label id="email-label" for="email">What's your email?</label>
+            <input 
+                id="email" 
+                type="email"
+                class="form-control"
+                required
+                />
+        </fieldset>
+        <fieldset>
+            <label id="number-label" for="number">How old are you?</label>
+            <input 
+                id="number" 
+                type="number" 
+                min="8" 
+                max="100"
+                class="form-control"
+                required
+                />
+        </fieldset>
+        <!-- <p>From where did you hear about us?</p>
+        <select id="dropdown">
+            <option value="social-media">Social Media</option>
+            <option value="friend">From a friend</option>
+            <option value="ad">From advertisement</option>
+            <option value="others"></option>
+        </select> -->
+
+        <fieldset class="radio-wrapper">
+            <p>How often do you visit Blank Cafe?</p>
+            <label><input id="daily" type="radio" value="daily" name="visit">Daily</label>
+
+            <label><input id="fewtimes" type="radio" value="fewtimes" name="visit">Several times a week</label>
+
+            <label><input id="once" type="radio" value="once" name="visit">Once a week</label>
+
+            <label><input id="several" type="radio" value="several" name="visit">Several times a month</label>
+
+            <label><input id="rarely" type="radio" value="rarely" name="visit">Rarely</label>
+        </fieldset>
+
+
+        <fieldset>
+            <p>How much do you love us on a scale of 1-10?</p>
+            <select id="dropdown" class="form-control" class="form-control" required>
+                <option disable selected value>Select an option</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <p>What are your favorite type of coffees?</p>
+            <div class="checkbox-wrapper">
+            <label>
+                <input
+                    name="checkbox"
+                    value="French"
+                    type="checkbox"
+                    class="checkbox-coffee"/>French Vanilla</label>
+            <label>
+                <input
+                    name="checkbox"
+                    value="Caramel"
+                    type="checkbox"
+                    class="checkbox-coffee"/>Caramel Macchiato</label>
+            <label>
+                <input
+                    name="checkbox"
+                    value="Pumpkin"
+                    type="checkbox"
+                    class="checkbox-coffee"/>Pumpkin Spice</label>
+            <label>
+                <input
+                    name="checkbox"
+                    value="Hazelnut"
+                    type="checkbox"
+                    class="checkbox-coffee"/>Hazelnut</label>
+            <label>
+                <input
+                    name="checkbox"
+                    value="Mocha"
+                    type="checkbox"
+                    class="checkbox-coffee"/>Mocha</label>
+            </div>
+            </fieldset>
+
+        <fieldset>
+            <p>Are there any specific coffee variants or flavors you would like to see on our menu?</p>
+            <textarea
+                id="suggestions"
+                placeholder="Please provide your suggestions"
+                name="suggestions"
+                class="form-control"
+            ></textarea>
+        </fieldset>
+
+        <div class="button-center"> 
+            <button type="reset" id="reset" class="reset">Reset</button>
+            <button type="submit" id="submit" class="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
